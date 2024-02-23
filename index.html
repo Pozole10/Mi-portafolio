@@ -1,0 +1,949 @@
+<!--
+  Portafolio template
+  https://github.com/jaglux12/portafolio-template
+
+  Follow us 
+  @devsiderio - https://github.com/devsiderio
+  @jaglux12 - https://github.com/jaglux12
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    
+    <meta charset="utf-8"/>
+    <title>Mi portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- CDN - Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- CDN - Bootstrap Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS locales -->
+    <link rel="stylesheet" href="css/style-body.css" />
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/style-articulos.css" />
+    <link rel="stylesheet" href="css/style-skills.css" />
+
+  </head>
+
+  <body>
+
+    <!-- ========= Developer profile -->
+    <header class="container-fluid px-5 pt-5">
+     
+      <!-- Blank space -->
+      <div class="row d-block d-md-none mb-5">
+        <div class="d-flex justify-content-end">
+        </div>
+      </div>
+
+      <!-- Foto de perfil -->
+      <div class="row d-block d-md-none justify-content-center px-5 mb-3">
+        <div class="col-12 d-flex justify-content-center">
+          <div
+            class="d-flex justify-content-center rounded-circle overflow-hidden">
+            <img src="img/caro.jpeg" alt="" style="width: 90px"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nombre del desarrollador -->
+      <div class="row d-block d-md-none justify-content-center">
+        <div class="col-12 d-flex justify-content-center flex-column">
+          <h1 class="Nombre mt-3 text-center">Carolina Arias Reyes</h1>
+          <label class="Ocupacion text-center" style="color: white;">Estudiante de Desarrollo de Software Multiplataforma</label>
+        </div>
+      </div>
+    </header>
+    <!-- ========= -->
+
+    <!-- Body main content -->
+    <!-- ======== Diseño para dispositivos móviles ======== -->
+    <section class="d-block d-md-none">
+      <article class="px-5 pb-5">
+        <!-- Información del desarrollador -->
+        <div
+          class="d-block d-md-none justify-content-center py-4 d-flex flex-row mt-4 rounded">
+          <div class="d-flex flex-column mx-3">
+            <h1 class="Titulo text-center">22</h1>
+            <label class="SubTitulos text-center w-100">
+              Proyectos<br/>completados</label>
+          </div>
+        </div>
+
+        <!-- Descargar curriculum y redes sociales -->
+        <div
+          class="d-block d-md-none d-flex flex-row justify-content-center py-2 px-2">
+          <div class="d-flex justify-content-center">
+            <a
+              href="pdf/CarolinaCV.pdf"
+              download
+              rel="noopener noreferrer"
+              target="_blank">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary p-3 me-3 SubTitulos"
+                style="font-size: 0.9rem">
+                Descargar CV
+                <i class="bi bi-download" style="font-size: 0.9rem"></i>
+              </button>
+            </a>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <a
+              href="mailto:caroareyes.10@gmail.com"
+              type="button"
+              class="btn btn-outline-primary ms-1">
+              <i class="bi bi-envelope">
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Barra de tabs para moverse por el contenido de la página web -->
+        <nav class="d-flex justify-content-center d-block d-md-none">
+          <div
+            class="nav nav-tabs my-4 px-4 d-flex justify-content-center border-0 py-3"
+            id="nav-tab"
+            role="tablist">
+            <button
+              class="nav-link active p-2 px-3 rounded border-0"
+              id="nav-proyectos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-proyectos"
+              type="button"
+              role="tab"
+              aria-controls="nav-proyectos"
+              aria-selected="true">
+              Proyectos
+            </button>
+
+            <button
+              class="nav-link p-3 px-3 rounded ms-2 border-0"
+              id="nav-habilidades-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-habilidades"
+              type="button"
+              role="tab"
+              aria-controls="nav-habilidades"
+              aria-selected="false">
+              Habilidades
+            </button>
+          </div>
+        </nav>
+
+        <!-- Paneles que contienen la información de los tabs -->
+        <div class="tab-content d-block d-md-none" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-proyectos"
+            role="tabpanel"
+            aria-labelledby="nav-proyectos-tab"
+            tabindex="0">
+            <!-- Muestra los proyectos en dispositivos pequeños -->
+            <section class="d-block d-sm-none">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="proyRemeras d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px">
+                </div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">Sitio web</h4>
+                  <h3 class="Titulo">Remeras Sónicas</h3>
+                  <button
+                    type="button"
+                    name="button"
+                    class="btn btn-primary rounded-pill">
+                    <i class="bi bi-link"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <div
+                  class="proyAutos d-flex flex-column overflow-hidden"
+                  style="width: 280px; height: 200px">
+                </div>
+                <div class="text-light position-absolute mt-5">
+                  <h4 class="SubTitulos" style="font-size: 1rem">Sitio web</h4>
+                  <h3 class="Titulo">GT-Automóviles</h3>
+                  <button
+                    type="button"
+                    name="button"
+                    class="btn btn-primary rounded-pill">
+                    <i class="bi bi-link"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Muestra los proyectos en dispositivos medianos -->
+            <section class="d-none d-sm-block d-md-none">
+              <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyRemeras d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px">
+                  </div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Sitio web
+                    </h4>
+                    <h3 class="Titulo">Remeras Sónicas</h3>
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill">
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div
+                    class="proyAutos d-flex flex-column overflow-hidden"
+                    style="width: 400px; height: 200px">
+                  </div>
+                  <div class="text-light position-absolute mt-5">
+                    <h4 class="SubTitulos" style="font-size: 1rem">
+                      Sitio web
+                    </h4>
+                    <h3 class="Titulo">GT-Automóviles</h3>
+                    <button
+                      type="button"
+                      name="button"
+                      class="btn btn-primary rounded-pill">
+                      <i class="bi bi-link"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Muestra las habilidades del programador en dispositivos pequeños -->
+          <div
+            class="tab-pane fade"
+            id="nav-habilidades"
+            role="tabpanel"
+            aria-labelledby="nav-habilidades-tab"
+            tabindex="0">
+            <section class="d-block d-sm-none">
+              <div class="d-flex justify-content-center">
+                <div class="skills__area">
+                  <h3 class="skills__title">Desarrollo Frontend</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+                        <div>
+                          <h3 class="skills__name">HTML</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">CSS</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">JavaScript</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Vue</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Bootstrap</h3>
+                          <span class="skills__level">Avanzado</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Git</h3>
+                          <span class="skills__level">Avanzado</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <div class="skills__area">
+                  <h3 class="skills__title">Desarrollo Backend</h3>
+
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">PHP</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">MySQL</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Ruby</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Python</h3>
+                          <span class="skills__level">Intermedio</span>
+                        </div>
+                      </div>
+
+                      <div class="skills__data">
+                        <i
+                          class="bi bi-patch-check"
+                          style="color: var(--color-principal)">
+                        </i>
+
+                        <div>
+                          <h3 class="skills__name">Apache</h3>
+                          <span class="skills__level">Básico</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Muestra las habilidades en dispositivos medianos -->
+            <section class="d-none d-sm-block d-md-none">
+              <div class="row">
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div class="skills__area">
+                    <h3 class="skills__title">Desarrollo Frontend</h3>
+
+                    <div class="skills__box">
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Vue</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Bootstrap</h3>
+                            <span class="skills__level">Avanzado</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__level">Avanzado</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                  <div class="skills__area">
+                    <h3 class="skills__title">Desarrollo Backend</h3>
+
+                    <div class="skills__box">
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">PHP</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">MySQL</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Ruby</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__level">Intermedio</span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <i
+                            class="bi bi-patch-check"
+                            style="color: var(--color-principal)">
+                          </i>
+
+                          <div>
+                            <h3 class="skills__name">Apache</h3>
+                            <span class="skills__level">Básico</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Licencia de la página web -->
+        <div
+          class="d-block d-md-none d-flex flex-column align-items-center mt-5">
+          <p class="text-light SubTitulos">
+            Este sitio web está bajo la
+            <a
+              href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+              class="Links">
+              Licencia Pública General de GNU 2.0
+            </a>
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- ======== Cierre para dispositivos móviles ======== -->
+
+    <!-- ======== Apertura para tablets y computadoras ======== -->
+    <section class="d-none d-md-block pt-5">
+      <nav class="navbar navbar-expand fixed-top px-5 barra-mobiles">
+        <div class="container-fluid mt-3 mb-3 px-5">
+          <a class="TituloBrand" href="#"> Carolina </a>
+
+          <div class="navbar-nav">
+            <a class="TitulosNav" href="#"> Inicio </a>
+
+            <a class="TitulosNav" href="#sobreMi"> Sobre mí </a>
+
+            <a class="TitulosNav" href="#habilidades"> Habilidades </a>
+
+            <a class="TitulosNav" href="#proyectos"> Proyectos </a>
+
+            <a class="TitulosNav" href="#contacto"> Contacto </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Muestra la información principal del desarrollador -->
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px">
+
+        <div class="w-75 mx-auto d-flex justify-content-center pt-4 py-5 mb-5" style="text-align: center;">
+          <div class="w-50">
+            <h1 class="TituloQuienSoy">Hola, soy</h1>
+            <h1 class="TituloQuienSoy">Carolina</i></h1>
+            <h2 class="SubTitulosQuienSoy text-start">Estudiante de Desarrollo de Software Multiplataforma.</h2>
+            <p class="ParrafoQuienSoy text-start pe-5">
+              Estudiante de lunes a viernes a quien le gusta explorar nuevas cosas y experimentar con la tecnología. Soy apasionada por el desarrollo de software y el diseño de las cosas. Así como me gusta crear y diseñar, también me gusta asegurarme de que todo funcione correctamente y administrar que todo esté en orden.
+            </p>
+        
+            <a href="#contacto">
+              <button
+                type="button"
+                name="button"
+                class="btn btn-primary p-3 me-3 SubTitulos"
+                style="font-size: 0.9rem;">
+                Contáctame
+                <i
+                  class="bi bi-caret-right-fill ms-3"
+                  style="font-size: 0.9rem;">
+                </i>
+              </button>
+            </a>
+          </div>
+          <div class="home_img">
+            <div class="d-flex justify-content-center">
+              <img src="img/caro.jpeg" alt="" style="width: 280px; height: 280px; border-radius: 50%;" />
+            </div>
+          </div>          
+        </div>
+        
+      </div>
+
+      <!-- Sección Sobre mí -->
+      <h2 id="sobreMi">Sobre mí</h2>
+      <div
+        id="inicio"
+        class="mx-5 py-5 d-flex"
+        style="margin-top: 100px; margin-bottom: 100px">
+        <div class="sobreMi_container d-flex justify-content-center">
+          <div class="img-sobreMi">
+            <img
+              src="img/caro.jpeg"
+              alt=""
+              class=" img-sobreMi-estilo"/>
+          </div>
+          <div class="sobreMi-data w-50">
+            <p>
+              Me llamo Carolina.<br />
+              Empecé en mi camino en el desarrollo web cuando entré a la carrera. Poco después de descubrir este maravilloso mundo de tecnología, comencé a explorar más y me di cuenta de que me gusta mucho crear y diseñar, así como también administrar el correcto funcionamiento de las cosas. Desde entonces, he realizado varios proyectos y estoy aprendiendo otras tantas tecnologías.
+            </p>
+            <div class="sobreMi-info">
+              <div class="sobreMi-info-box">
+                <span class="Titulo d-block text-center">22</span>
+                <span class="SubTitulos d-block text-center"
+                  >Proyectos completados
+                </span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a
+                href="pdf/developerCV.pdf"
+                download
+                rel="noopener noreferrer"
+                target="_blank">
+                <button
+                  type="button"
+                  name="button"
+                  class="btn btn-primary p-3 me-3 SubTitulos"
+                  style="font-size: 0.9rem">
+                  Descargar CV
+                  <i class="bi bi-download" style="font-size: 0.9rem"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades -->
+
+      <h2 id="habilidades">Habilidades</h2>
+      <div
+        class="mx-5 py-5 d-flex justify-content-center"
+        style="margin-top: 100px; margin-bottom: 100px">
+
+        <!-- Desarrollo Frontend -->
+        <div class="d-flex justify-content-center">
+          <div class="skills__area">
+            <h3 class="skills__title">Desarrollo Frontend</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  ></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)"
+                  ></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Intermedio</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">JQuery</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desarrollo Backend -->
+
+        <div class="d-flex justify-content-center">
+          <div class="skills__area">
+            <h3 class="skills__title">Desarrollo Backend</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">TypeScript</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Java</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i
+                    class="bi bi-patch-check"
+                    style="color: var(--color-principal)">
+                  </i>
+
+                  <div>
+                    <h3 class="skills__name">Apache</h3>
+                    <span class="skills__level">Básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección Proyectos -->
+     
+
+      <h2 id="proyectos">Proyectos</h2>
+      <div style="text-align: center;"><h4 style="color: white;">Solo pongo estos 2 debido a que son los uncos con los que cuento, 
+        he realizado mas, pero no los tengo a mi alcance.
+      </h4>
+      <div class="mx-5 py-5 d-flex justify-content-center" style="margin-top: 100px; margin-bottom: 100px">
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <!-- Contenido del primer elemento -->
+          <div class="proyRemeras d-flex flex-column overflow-hidden" style="width: 400px; height: 200px"></div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">Sitio web</h4>
+            <h3 class="Titulo">API-CAFETERIA</h3>
+            <button type="button" name="button" class="btn btn-primary rounded-pill" id="redirectButton1">
+              <i class="bi bi-link"></i>
+            </button>
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+          <!-- Contenido del segundo elemento -->
+          <div class="proyAutos d-flex flex-column overflow-hidden" style="width: 400px; height: 200px"></div>
+          <div class="text-light position-absolute mt-5">
+            <h4 class="SubTitulos" style="font-size: 1rem">Proyecto WEb</h4>
+            <h3 class="Titulo">Reservaciones Hotel</h3>
+            <a href="https://github.com/BraytoGBDX/Motel_API.git" class="btn btn-primary rounded-pill">
+              <i class="bi bi-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-5 py-5 d-flex justify-content-center" style="margin-top: 100px; margin-bottom: 100px">
+        <div class="d-flex justify-content-center" style="margin-inline: 2%">
+      <div class="d-flex justify-content-center" style="margin-inline: 2%">
+        <!-- Contenido del tercer elemento -->
+        <div class="proyRaices d-flex flex-column overflow-hidden" style="width: 400px; height: 200px"></div>
+        <div class="text-light position-absolute mt-5">
+          <h4 class="SubTitulos" style="font-size: 1rem">Proyecto propio</h4>
+          <h3 class="Titulo">Detalle de Amor</h3>
+          <a href="https://github.com/Pozole10/Detalle-de-amor.git" class="btn btn-primary rounded-pill">
+            <i class="bi bi-link"></i>
+          </a>
+        </div>
+      </div>
+    
+      <div class="d-flex justify-content-center" style="margin-inline: 2%">
+        <!-- Contenido del cuarto elemento -->
+        <div class="proySpring d-flex flex-column overflow-hidden" style="width: 400px; height: 200px"></div>
+        <div class="text-light position-absolute mt-5">
+          <h4 class="SubTitulos" style="font-size: 1rem">Proyecto Web</h4>
+          <h3 class="Titulo">Tienda Spring(Nuevo)</h3>
+          <a href="https://github.com/Pozole10/TiendaSpring.git" class="btn btn-primary rounded-pill">
+            <i class="bi bi-link"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Sección Contacto -->
+
+      <h2 id="contacto">Contacto</h2>
+      <div class="mx-5 py-5 d-flex justify-content-center" style="margin-top: 10px; margin-bottom: 70px">
+        <div class="d-flex justify-content-center">
+          <div class="mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-envelope"></i>
+              <div class="ms-3">
+                <h3 class="Titulo">Correo</h3>
+                <span class="SubTitulos">caroareyes.10@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="d-flex">
+            <div class="mb-3 ms-5">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <div class="ms-3">
+                  <h3 class="Titulo">Telefono</h3>
+                  <span class="SubTitulos">7641204705</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="d-flex justify-content-center">
+        <p class="text-light SubTitulos">
+          Este sitio web está bajo los:
+          <a href="">
+            Derechos de Carolina.
+          </a>
+        </p>
+      </div>
+    </section>
+    <!-- ======== Cierre para tablets y computadoras ======== -->
+
+    <!-- JavaScript with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
